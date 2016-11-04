@@ -1,7 +1,4 @@
-#!/bin/sh
-
-install () {
-
+set -x
 set -eu
 
 UNAME=$(uname)
@@ -36,6 +33,3 @@ else
   curl -sL $URL -o $DEST
   chmod +x $DEST
 fi
-}
-
-install
