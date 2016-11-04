@@ -1,6 +1,6 @@
 dependencies:
   pre:
-    - ./prism.sh
+    - sh ./prism.sh
 
 test:
   override:
