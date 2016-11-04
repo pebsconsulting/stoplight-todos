@@ -1,0 +1,7 @@
+dependencies:
+  pre:
+    - ./prism.sh
+
+test:
+  override:
+    - prism test -s https://api.stoplight.io/v1/versions/qFdgE5KMaHpFAWpqo/export/stoplight.json
