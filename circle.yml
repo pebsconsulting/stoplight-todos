@@ -1,6 +1,7 @@
 dependencies:
   pre:
-    - curl https://raw.githubusercontent.com/pytlesk4/stoplight-todos/master/prism.sh | sh
+    - bash ./prism.sh
+    #- curl https://raw.githubusercontent.com/pytlesk4/stoplight-todos/master/prism.sh | sh
 
 test:
   override:
