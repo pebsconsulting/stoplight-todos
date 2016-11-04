@@ -24,7 +24,7 @@ fi
 
 LATEST=$(curl -s https://api.github.com/repos/stoplightio/prism/tags | grep -Eo '"name":.*?[^\\]",'  | head -n 1 | sed 's/[," ]//g' | cut -d ':' -f 2)
 URL="https://github.com/stoplightio/prism/releases/download/$LATEST/prism_$PLATFORM"
-DEST=$PATH
+DEST=$HOME/bin
 
 if [ -z $LATEST ] ; then
   echo "Error requesting. Download binary from ${URL}"
